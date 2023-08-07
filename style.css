@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*Navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(82, 78, 78);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+/* Logo and Image */
+#logo{
+margin: 6px 21px;
+border-radius: 20%;
+}
+#logo img{
+    width: 70px;
+    border-radius: 143px;
+}
+/* Navigation Bar:List styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Anton', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: #d787bf;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 420px;
+}
+#home::before{
+    content: "";
+    background: url('../cones.jpg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+
+} 
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+/* Services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid #ff45c6;
+    padding: 15px;
+    margin: 5px 6px;
+    border-radius: 28px;
+    background: #d9c6e4;
+}
+#services .box img{
+   height: 155px;
+    display: block;
+    margin: auto; 
+}
+#services .box{
+    font-family: 'Anton', sans-serif;
+}
+
+/* Client section */
+#client-section{
+    position: relative;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+  height: 120px;
+}
+.client-item{
+    padding: 34px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../x.png') no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility classes */
+.h-primary{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.8rem;
+    padding: 5px;
+    
+}
+.h-secondary{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.1rem;
+    padding: 5px;
+    
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid #e8c0ff;
+    background-color: #ff45c6;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.center{
+    text-align: center;
+}
